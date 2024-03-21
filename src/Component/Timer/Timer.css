@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(224, 194, 153);
+}
+
+/* .outerContainer {
+  height: 100vh;
+  width: auto;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  z-index: -5;
+} */
+
+.container {
+  margin: auto;
+  margin-top: 30px;
+  height: 70vh;
+  width: 60vw;
+  background-color: antiquewhite;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(238, 221, 221, 0.716) 0%,
+    rgba(24, 23, 23, 0.466) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding-top: 5rem;
+  box-shadow: 5px 5px 15px 10px rgb(130, 124, 124);
+}
+
+.heading {
+  text-transform: uppercase;
+  color: rgb(39, 103, 160);
+  padding-bottom: 3rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.timerDisplay {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.dateInput {
+  height: 4rem;
+  width: 25rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(4, 36, 110);
+  text-transform: uppercase;
+}
+.timesUp {
+  font-size: 2rem;
+  width: 20rem;
+  height: 8rem;
+  z-index: 2;
+  position: relative;
+  top: 10px;
+  background-color: rgb(232, 198, 124);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 20px 10px black;
+  color: white;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(124, 15, 15, 0.5) 20%,
+    rgba(121, 101, 101, 0) 100%
+  );
+}
+
+.timesUp button {
+  display: block;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  background-color: inherit;
+  color: white;
+  width: 3rem;
+  border-radius: 5px;
+  height: 1.5rem;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 10px;
+  background-color: rgb(13, 70, 51);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 2px rgb(67, 66, 66);
+  cursor: pointer;
+}
+
+.btnSection {
+  display: flex;
+}
+
+.timeUnit {
+  width: 5rem;
+  height: 3rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.timeValue {
+  background-color: rgb(86, 91, 228);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.timeLabel {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+  .container {
+    width: 90vw;
+    height: 80vh;
+    padding-top: 0;
+  }
+
+  .dateInput {
+    width: 13rem;
+    font-size: 1rem;
+  }
+
+  .timeUnit {
+    width: 4rem;
+    height: 3rem;
+    margin: 0.3rem;
+  }
+
+  .timeValue {
+    font-size: 1rem;
+    padding: 0.5rem;
+    /* margin-bottom: 5px; */
+    border-radius: 10px;
+  }
+
+  .timeLabel {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    margin: 2rem 0.5rem;
+    padding: 10px;
+  }
+
+  .timesUp {
+    font-size: 2rem;
+    width: 80%;
+    height: 5rem;
+  }
+}
